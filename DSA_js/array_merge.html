@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge Two Array in one</title>
+</head>
+<body>
+    <script>
+        let data = [1,2,3,4,5]
+        let data2 = [6,7,8,9,10]
+        let data3 = []
+        for(let i = 0; i<data.length; i++){
+            // console.log(data[i])
+            data3[i] = data[i]
+        }
+        for(let i =0; i<data2.length;i++){
+            // console.log(data.length+i)
+            data3[data.length+i] = data2[i]
+        }
+        console.log(data3)
+
+
+        // how to merge this with inbuilt methods.
+        let arr = [1,2,3,4,5]
+        let arr2 = [6,7,8,9,10]
+        let newArr = [...arr, ...arr2]
+        console.log("using inbuilt methods",newArr)
+    </script>
+</body>
+</html>

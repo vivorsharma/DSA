@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in js </title>
+</head>
+<body>
+    <script>
+        let data = {
+            name: 'vivor',
+            age: 21,
+            mail:'abc@test.com',
+            getName:function(){
+                return this.name
+            }
+        }
+
+        for(x in data){
+            // console.log(data[x])
+        }
+        // console.log(Object.keys(data))
+        // console.log(Object.values(data))
+        console.log(Object.entries(data))
+    </script>
+</body>
+</html>

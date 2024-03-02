@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head and tail Recursion</title>
+</head>
+<body>
+    <script>
+        // function color(){
+        // let data = 20;
+        // console.log(data)
+        // }
+        // function days(){
+        //  color()
+        // }
+        // function fruits(){
+        //   days()
+        // }
+        //  function topFunction(){
+        //   fruits()
+        //  }
+        //  topFunction()
+
+    function test(x){
+        console.log(x)
+        if(x>0){
+            test(x-1)
+        }
+        console.log(x)
+    }
+    let data = 5
+    test(data)
+
+    // NOTE: top pr koi operation perform krenge toh diffrent result milega. usko khenge head recursion.
+    //       niche koi operation perform kroge toh usse khenge tail recursion.
+    </script>
+</body>
+</html>

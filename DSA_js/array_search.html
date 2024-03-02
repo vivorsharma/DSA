@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Element in array</title>
+</head>
+<body>
+    <input type="text" id="searchElement" placeholder="Enter a value">
+    <button onclick="searchElement()">Search Element</button>
+    <script>
+        // let data = [10,20,30,40,50,60,70]
+        // let searchElement = 20;
+        // let index =undefined
+        // for(let i= 0; i<=data.length;i++){
+        //     // console.log(data[i])
+        //     if(data[i] == searchElement){
+        //         index=i;
+        //         break;
+        //     }
+        // }
+        // console.log(index)
+        function searchElement(){
+            let data = [10,20,30,40,50,60,70]
+        let searchElement = document.getElementById('searchElement').value
+        let index =undefined
+        for(let i= 0; i<=data.length;i++){
+            // console.log(data[i])
+            if(data[i] == searchElement){
+                index=i;
+                break;
+            }
+        }
+        console.log(index)
+        }
+    </script>
+</body>
+</html>

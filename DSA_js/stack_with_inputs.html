@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack with inputs</title>
+</head>
+
+<body>
+    <input type="text" placeholder="Enter Stack Value" id="newEl">
+    <button onclick="push()">Add Element to stack</button>
+    <button onclick="pop()">Remove Element to stack</button>
+    <button onclick="display()">Display All Elements in stack</button>
+    <script>
+        let data = [];
+        let currentSize = data.length;
+        let max = 5;
+        function push() {
+            let newVal = document.getElementById('newEl').value
+            if (currentSize >= max) {
+                alert("stack is full")
+            } else {
+                data[currentSize] = newVal
+                currentSize++
+                document.getElementById('newEl').value = ''
+                console.log("element added")
+            }
+
+        }
+        function pop() {
+            if (currentSize > 0) {
+                currentSize -= 1
+                data.length = currentSize
+            } else {
+                alert("stack is already empty")
+            }
+        }
+        function display() {
+            for (let i = 0; i <= currentSize - 1; i++) {
+                console.log(data[i])
+            }
+        }
+
+        console.log(data)
+    </script>
+</body>
+
+</html>
